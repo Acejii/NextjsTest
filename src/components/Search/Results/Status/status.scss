@@ -1,0 +1,27 @@
+.status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5px;
+    padding: 2px 10.5px;
+    background-color: #EC8104;
+    border-radius: 8px;          
+
+    .status-icon {
+        width: 14.5px;
+        height: 14.5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .status-content {
+        font-size: 12px;
+        font-weight: 500;
+        color: #FFFFFF;
+    }
+}
+
+.status.own {
+    background-color: #6863D7;
+}

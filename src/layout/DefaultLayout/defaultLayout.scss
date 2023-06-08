@@ -1,0 +1,51 @@
+@use '@/styles/variables' as *;
+
+.default-layout {
+    background-color: $body-bg;
+    .navbar {
+        width: $navbar-width;
+        height: 100vh;
+        background-color: $navbar-bg;
+        padding: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        left: 0;
+        transition: width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+
+        &.collapse {
+            width: $navbar-collapse-width;
+        }
+    }
+
+    .main {
+        min-height: 100vh;
+        padding-left: $navbar-width;
+        transition: all 0.3s cubic-bezier(0.2, 0, 0, 1) 0s;
+        position: relative;
+
+        .header {
+            width: 100%;
+            height: $header-height;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .content {
+            width: 100%;
+            overflow: hidden;
+            height: calc(100vh - $header-height);
+            padding: 16px 16px 0 16px;
+
+        }
+    }
+
+    .main.collapse {
+        padding-left: $navbar-collapse-width;
+    }
+}

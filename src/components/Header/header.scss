@@ -1,0 +1,21 @@
+
+.header-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px 0 24px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px 0 rgba(#989797, 0.25);
+
+    .header-title {
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .header-tools {
+        display: flex;
+        gap: 12px;
+    }
+}

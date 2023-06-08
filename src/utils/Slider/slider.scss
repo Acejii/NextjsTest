@@ -1,0 +1,69 @@
+.img-slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+    
+    .swiper-button-prev {
+        background-image: url("/assets/images/previos-button.png");
+    }
+    
+    .swiper-button-next {
+        background-image: url("/assets/images/next-button.png");
+    }
+    
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+    
+}
+
+
+
+.swiper-pagination {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.fraction-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    .fraction-number {
+        height: 16px;
+        display: flex;
+        align-items: center;
+        text-shadow: 0 0 3px rgba($color: #000000, $alpha: 1);
+    }
+
+    .fraction-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
