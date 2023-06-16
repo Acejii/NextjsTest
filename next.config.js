@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export",
+    // output: "export",
     images: {
         domains: ['cdn.resales-online.com', 'resource.resales-online.com'],
         unoptimized: true
